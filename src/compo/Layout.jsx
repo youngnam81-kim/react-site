@@ -12,7 +12,12 @@ function Layout() {
                     <li>
                         <Link to="/react-site/login">Login</Link>
                     </li>
-
+                    <li>
+                        <Link to="/react-site/0811">0811</Link>
+                    </li>
+                    <li>
+                        <Link to="/react-site/0808">0808</Link>
+                    </li>
                 </ul>
             </nav>
             <Outlet></Outlet>
