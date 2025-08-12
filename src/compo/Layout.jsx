@@ -13,6 +13,9 @@ function Layout() {
                         <Link to="/react-site/login">Login</Link>
                     </li>
                     <li>
+                        <Link to="/react-site/0812">0812</Link>
+                    </li>
+                    <li>
                         <Link to="/react-site/0811">0811</Link>
                     </li>
                     <li>
