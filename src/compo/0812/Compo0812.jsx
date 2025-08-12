@@ -10,14 +10,12 @@ export default function Compo0812() {
         <>
             <h2>0812</h2>
             <hr></hr>
-            <ExUseEffect01></ExUseEffect01>
-            <ExUseEffect02></ExUseEffect02>
-            <ExUseEffect03></ExUseEffect03>
-            <ExUseEffect04></ExUseEffect04>
-            <ExUseEffect05></ExUseEffect05>
-            <hr></hr>
-            {/* <Counter></Counter> */}
-            <hr></hr>
+            <ExUseEffect01></ExUseEffect01><hr></hr>
+            <ExUseEffect02></ExUseEffect02><hr></hr>
+            <ExUseEffect03></ExUseEffect03><hr></hr>
+            <ExUseEffect04></ExUseEffect04><hr></hr>
+            <ExUseEffect05></ExUseEffect05><hr></hr>
+            <Counter></Counter><hr></hr>            
         </>
     )
 }
