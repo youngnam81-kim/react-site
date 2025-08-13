@@ -1,0 +1,105 @@
+/* 전체 레이아웃 */
+.container {
+    display: flex;
+    min-height: 93vh;
+    /* overflow: hidden; */
+    /* 세로 스크롤은 content에서만 */
+}
+
+/* 메뉴 (왼쪽) */
+.menu {
+    /* flex: 0 0 200px; */
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    /* 화면 고정 */
+    top: 0;
+    height: 93vh;
+    /* 화면 전체 높이 */
+    box-sizing: border-box;
+}
+
+.menu button {
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    border: none;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.menu button.active {
+    background-color: #555;
+    color: white;
+}
+
+/* 컨텐츠 (가운데) */
+.content {
+    flex: 1;
+    width: 1000px;
+    padding: 0px;
+    background-color: #fff;
+    overflow-y: auto;
+    /* 가운데만 스크롤 가능 */
+    height: 93vh;
+    /* box-sizing: border-box; */
+}
+
+/* 광고 (오른쪽) */
+.ad {
+    /* flex: 0 0 200px; */
+    width: 200px;
+    background-color: #eee;
+    padding: 0px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    height: 93vh;
+    box-sizing: border-box;
+}
+
+/* 반응형 */
+@media (max-width: 800px) {
+
+    .menu {
+        height: 100px;
+        align-self: last baseline;
+        display: flex;
+
+        justify-self: center;
+        flex-direction: row;
+
+
+        position: fixed;
+        z-index: 1000;
+        bottom: 0;
+        /*
+        */
+        /* justify-content: center; */
+    }
+
+    .menu button {
+        width: 100px;
+        height: 50px;
+        padding: 0px;
+        margin: 0px 0;
+        cursor: pointer;
+        border: none;
+        /* background-color: #ddd; */
+        border-radius: 5px;
+    }
+
+    .content {
+        width: 600px;
+        order: 1;
+        height: auto;
+    }
+
+    .ad {
+        display: none;
+        /* 광고 숨김 */
+    }
+}
