@@ -5,6 +5,7 @@ import Layout from "./compo/Layout.jsx";
 import Compo0811 from "./compo/0811/Compo0811.jsx";
 import Compo0812 from "./compo/0812/Compo0812.jsx";
 import Compo0813 from "./compo/0813/Compo0813.jsx";
+import Compo0814 from "./compo/0814/Compo0814.jsx";
 import Compo0808 from "./compo/0808/Compo0808.jsx";
 import { BrowserRouter as Router, Routes } from "react-router-dom";
 // import { HashRouter  as Router, Routes } from "react-router-dom";
@@ -28,6 +29,7 @@ function App() {
           <Route path="/react-site/0808" element={<Compo0808 />} />
           <Route path="/react-site/0812" element={<Compo0812 />} />
           <Route path="/react-site/0813" element={<Compo0813 />} />
+          <Route path="/react-site/0814" element={<Compo0814 />} />
         </Routes>
       </Router>
       {/* <div>

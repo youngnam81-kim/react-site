@@ -24,7 +24,7 @@ const ExMemo3 = () => {
             <ol>
                 {
                     filteredUser.map((u) => (
-                        <li key={u.id}>{u.name} 고객님 ({u.active ? "활성" : "비활성"}) / {String(u.active)}</li>
+                        <li key={u.id}>{u.name} 고객님 ({showActive ? "활성" : "비활성"})</li>
                     ))
                 }
             </ol>
