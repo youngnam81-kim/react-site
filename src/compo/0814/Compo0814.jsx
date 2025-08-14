@@ -10,11 +10,13 @@ import ExMemo4 from "./ExMemo4"
 import ExMemo5 from "./ExMemo5"
 import ExRef01 from "./ExRef01"
 import ExRef02 from "./ExRef02"
+import ExRef03 from "./ExRef03"
 
 export default function Compo0814() {
     return (
         <>
             <h2>0814</h2><hr></hr>
+            <ExRef03></ExRef03><hr></hr>
             <ExRef02></ExRef02><hr></hr>
             <ExRef01></ExRef01><hr></hr>
             <ExCallback05></ExCallback05><hr></hr>
