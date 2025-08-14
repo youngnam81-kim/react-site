@@ -1,16 +1,26 @@
 import React, { useRef, useState } from 'react'
 
 function ExRef02() {
-    const renderCnt = useRef(0);
-    const [text, setText] = useState("");
+    const [count, setCount] = useState(0);
+    const timeRef = useRef(null);
 
-    renderCnt.current += 1;
-
+    const startTimer = () => {
+        if (!timeRef.current) {
+            timeRef.current = setInterval(() => {
+                setCount((prev) => prev + 1);
+            }, 500);
+        }
+    };
+    const stopTimer = () => {
+        clearInterval(timeRef.current);
+        timeRef.current = null;
+    };
     return (
         <>
             <div>ExRef02</div>
-            <input type="text" value={text} onChange={(e) => setText(e.target.value)} />
-            <p>렌더링 횟수 : {renderCnt.current}</p>
+            <p>COUNT : {count}</p>
+            <button onClick={startTimer}>시작</button>
+            <button onClick={stopTimer}>정지</button>
         </>
     )
 }
