@@ -8,13 +8,18 @@ import Compo0812 from "./compo/0812/Compo0812.jsx";
 import Compo0813 from "./compo/0813/Compo0813.jsx";
 import Compo0814 from "./compo/0814/Compo0814.jsx";
 import Compo0818 from "./compo/0818/Compo0818.jsx";
+import MiniBlog from "./compo/miniBlog/MiniBlog.jsx";
+import MainPage from './compo/miniBlog/components/pages/MainPage';
+import PostWritePage from './compo/miniBlog/components/pages/PostWritePage';
+import PostViewPage from './compo/miniBlog/components/pages/PostViewPage';
+import ReactPractice from "./compo/react-practice/ReactPractice.jsx";
+import AxiosTest from "./compo/axios/Test.jsx";
+import AxiosItemList from "./compo/axios/ItemList.jsx";
+
 
 import { BrowserRouter as Router, Routes } from "react-router-dom";
-// import { HashRouter  as Router, Routes } from "react-router-dom";
 import { Route } from "react-router-dom";
 import { useState } from "react";
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
 
 function App() {
   const [count, setCount] = useState(0);
@@ -25,6 +30,12 @@ function App() {
       <Router>
         <Routes>
           <Route index element={<Home />} />
+          <Route path="/react-site/axiosTest" element={<AxiosTest />} />
+          <Route path="/react-site/axiosItemList" element={<AxiosItemList />} />
+          <Route path="/react-site/MiniBlog" element={<MiniBlog />} />
+          <Route path='/main' element={<MainPage />} />
+          <Route path='/post-write' element={<PostWritePage />} />
+          <Route path='/post/:postId' element={<PostViewPage />} />
           <Route path="/react-site/" element={<Layout />} />
           <Route path="/react-site/login" element={<Login />} />
           <Route path="/react-site/0811" element={<Compo0811 />} />
@@ -33,28 +44,9 @@ function App() {
           <Route path="/react-site/0813" element={<Compo0813 />} />
           <Route path="/react-site/0814" element={<Compo0814 />} />
           <Route path="/react-site/0818" element={<Compo0818 />} />
+          <Route path="/react-site/react-practice" element={<ReactPractice />} />
         </Routes>
       </Router>
-      {/* <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p> */}
     </>
   );
 }

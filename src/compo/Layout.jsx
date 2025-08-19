@@ -13,6 +13,18 @@ function Layout() {
                         <Link to="/react-site/login">Login</Link>
                     </li>
                     <li>
+                        <Link to="/react-site/axiosTest">axiosTest</Link>
+                    </li>
+                    <li>
+                        <Link to="/react-site/axiosItemList">AxiosItemList</Link>
+                    </li>
+                    <li>
+                        <Link to="/react-site/miniBlog">MiniBlog</Link>
+                    </li>
+                    <li>
+                        <Link to="/react-site/react-practice">ReactPractice</Link>
+                    </li>
+                    <li>
                         <Link to="/react-site/0818">0818</Link>
                     </li>
                     <li>

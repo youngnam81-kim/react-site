@@ -11,13 +11,16 @@
     "deploy": "gh-pages -d dist",
     "predeploy": "npm run build"
   },
+  "proxy": "http://localhost:8080",
   "dependencies": {
     "@reduxjs/toolkit": "^2.8.2",
+    "axios": "^1.11.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-modal": "^3.16.3",
     "react-redux": "^9.2.0",
     "react-router-dom": "^7.8.0",
+    "styled-components": "^6.1.19",
     "zustand": "^5.0.7"
   },
   "devDependencies": {
