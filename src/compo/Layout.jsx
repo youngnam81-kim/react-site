@@ -13,15 +13,12 @@ function Layout() {
                     <li>
                         <Link to="/react-site/login">Login</Link>
                     </li>
-                    <li>
-                        <Link to="/react-site/layoutTest">LayoutTest</Link>
-                    </li>
-                    <li>
+                    {/* <li>
                         <Link to="/react-site/axiosTest">axiosTest</Link>
                     </li>
                     <li>
                         <Link to="/react-site/axiosItemList">AxiosItemList</Link>
-                    </li>
+                    </li> */}
                     <li>
                         <Link to="/react-site/miniBlog">MiniBlog</Link>
                     </li>

@@ -16,7 +16,7 @@ export default function Bpp() {
     return (
         <div className="container">
             {/* 왼쪽 메뉴 */}
-            {/* <nav className="menu">
+            <nav className="menu">
                 {["홈", "페이지1", "페이지2", "연락처"].map((item, index) => (
                     <button
                         key={index}
@@ -26,7 +26,7 @@ export default function Bpp() {
                         {item}
                     </button>
                 ))}
-            </nav> */}
+            </nav>
 
             {/* 가운데 컨텐츠 */}
             <main className="content">
@@ -40,7 +40,7 @@ export default function Bpp() {
             </main>
 
             {/* 오른쪽 광고 */}
-            {/* <aside className="ad">광고 영역</aside> */}
+            <aside className="ad">광고 영역</aside>
         </div>
     );
 }
