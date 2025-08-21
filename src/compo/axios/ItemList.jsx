@@ -7,6 +7,7 @@ function ItemList() {
   const [error, setError] = useState(null);
   
   useEffect(() => {
+    
     const fetchItems = async () => {
       try {
         const response = await axios.get('/api/items');
@@ -26,14 +27,17 @@ function ItemList() {
   if (error) return <p>{error}</p>;
   
   return (
+    <>
     <div>
       <h2>아이템 목록</h2>
       <ul>
         {items.map(item => (
-          <li key={item.id}>{item.name}</li>
+          <li key={item.id}>{item.name} / {item.gender} / {item.birth}</li>
         ))}
       </ul>
     </div>
+
+    </>
   );
 }
 

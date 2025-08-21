@@ -15,7 +15,7 @@ import PostViewPage from './compo/miniBlog/components/pages/PostViewPage';
 import ReactPractice from "./compo/react-practice/ReactPractice.jsx";
 import AxiosTest from "./compo/axios/Test.jsx";
 import AxiosItemList from "./compo/axios/ItemList.jsx";
-
+import AxiosSearchItemList from "./compo/axios/SearchItemList.jsx";
 import { BrowserRouter as Router, Routes } from "react-router-dom";
 import { Route } from "react-router-dom";
 import { useState } from "react";
@@ -31,6 +31,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/react-site/axiosTest" element={<AxiosTest />} />
           <Route path="/react-site/axiosItemList" element={<AxiosItemList />} />
+          <Route path="/react-site/axiosSearchItemList" element={<AxiosSearchItemList/> } />
           <Route path="/react-site/MiniBlog" element={<MiniBlog />} />
           <Route path='/main' element={<MainPage />} />
           <Route path='/post-write' element={<PostWritePage />} />
