@@ -17,8 +17,8 @@ function SearchItemList() {
             setError(null);
 
             // name 파라미터를 쿼리스트링으로 전달
-            // const response = await axios.get(`/api/membersByName?name=${name}`);
-            const response = await axios.post('/api/membersByNamePost', { name: name });
+            const response = await axios.get(`/api/membersByName?name=${name}`);
+            // const response = await axios.post('/api/membersByNamePost', { name: name });
             setSearchResults(response.data);
         } catch (err) {
             setError('검색 중 오류가 발생했습니다: ' + err.message);
